@@ -1,20 +1,15 @@
 # remote-ssh-tunnel-controller-lib
 
-## Dependencies:
+```shell
+pip install remote-ssh-tunnel-controller-lib
+```
 
-*  python3
-*  paramiko
-
-## Usage example:
-
-```bash
-~$ git clone https://github.com/guallo/remote-ssh-tunnel-controller-lib.git controller_lib
-~$ python3
->>> from controller_lib import factories
+```python3
+>>> from rssht_controller_lib import factories
 >>> ctl = factories.RSSHTControllerFactory.new()
 >>> ctl.update()
 >>> ctl.get_agents()
-(<RSSHTAgent: raspberry>, <RSSHTAgent: agent-1>)
+(<RSSHTAgent: raspberry-pi-1>, <RSSHTAgent: other-agent>)
 ...
 ... # use ctl's object tree
 ...
